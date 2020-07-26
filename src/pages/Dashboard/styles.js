@@ -33,6 +33,7 @@ const effect = keyframes`
 `;
 
 export const NavBar = styled.nav`
+
     height: 100%;
     display: flex;
     align-items: center;
@@ -49,6 +50,7 @@ export const NavBar = styled.nav`
         color: #b456d7;
         transition: all 0.5s ease 0s;
         font-family: 'Righteous', cursive;
+        text-decoration: none;
 
         svg{
             animation: ${effect} 2.5s alternate-reverse infinite;

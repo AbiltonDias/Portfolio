@@ -2,19 +2,19 @@ import styled, { keyframes } from 'styled-components';
 
 const circle = keyframes`
     0%{
-        box-shadow: 0 0 0 0 rgba(22, 10, 128, 0.2), 0 0 0 1em rgba(22, 10, 128, 0.2), 0 0 0 3em rgba(22, 10, 128, 0.2), 0 0 0 5em rgba(22, 10, 128, 0.2);
+        box-shadow: 0 0 0 0 rgba(159, 95, 159, 0.2), 0 0 0 1em rgba(159, 95, 159, 0.2), 0 0 0 3em rgba(159, 95, 159, 0.2), 0 0 0 5em rgba(159, 95, 159, 0.2);
     }
     100%{
-        box-shadow: 0 0 0 1em rgba(22, 10, 128, 0.2), 0 0 0 3em rgba(22, 10, 128, 0.2), 0 0 0 5em rgba(22, 10, 128, 0.2), 0 0 0 8em rgba(22, 10, 128, 0);
+        box-shadow: 0 0 0 1em rgba(159, 95, 159, 0.2), 0 0 0 3em rgba(159, 95, 159, 0.2), 0 0 0 5em rgba(159, 95, 159, 0.2), 0 0 0 8em rgba(22, 10, 128, 0);
     }
 `;
 
 const circleMobile = keyframes`
     0%{
-        box-shadow: 0 0 0 0 rgba(22, 10, 128, 0.2), 0 0 0 1em rgba(22, 10, 128, 0.2);
+        box-shadow: 0 0 0 0 rgba(159, 95, 159, 0.2), 0 0 0 1em rgba(159, 95, 159, 0.2);
     }
     100%{
-        box-shadow: 0 0 0 1em rgba(22, 10, 128, 0.2), 0 0 0 4em rgba(22, 10, 128, 0);
+        box-shadow: 0 0 0 1em rgba(159, 95, 159, 0.2), 0 0 0 4em rgba(22, 10, 128, 0);
     }
 `;
 
@@ -30,11 +30,12 @@ const faded = keyframes`
 `;
 
 export const Card = styled.div`
+    margin-top: 50px;
     position: relative;
     width: auto;
     height: auto;
     z-index: 1;
-    transition: 0.25s all;
+    transition: .25s all;
     animation-delay: 1s;
     animation: ${faded} 1.5s cubic-bezier(0.27, 1.38, 0.45, -0.23) 1;
 
@@ -46,7 +47,7 @@ export const Card = styled.div`
     .banner{
         position: relative;
         background: #252a2e;
-        box-shadow: 0 0 30px rgba(0,0,0,0.3);
+        box-shadow: 0 0 30px rgba(0,0,0,.3);
         width: 420px;
         height: auto;
         border-radius: 10px;
@@ -83,8 +84,8 @@ export const Card = styled.div`
         margin-bottom: 1rem;
         position: relative;
         top: 0;
-        height: 320px;
-        width: 320px;
+        height: 300px;
+        width: 300px;
         border: 12px solid #b456d7;
         border-radius: 50%;
         transition: transform 0.25s;
@@ -95,10 +96,12 @@ export const Card = styled.div`
     }
 
     h1 {
-        font-family: 'Lato', sans-serif;
+        font-family: 'Roboto Slap', sans-serif;
         font-family: 'Righteous', cursive;
         font-size: 2.5rem;
         margin-top: 1.1rem;
+        font-weight: 400;
+        color: #eee;
     }
 
     h3 {
