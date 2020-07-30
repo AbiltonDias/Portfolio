@@ -26,7 +26,7 @@ const Dashboard = _ =>{
             <Header>
                 <NavBar>
                     <a href='/Portifolio-2.0' className='logo'>
-                        Abilton
+                        Abilton Dias
                         <FaConnectdevelop size={34} />
                     </a>
                     <Toggle on={on} onClick={handleToggle}>
