@@ -7,7 +7,7 @@ import { Container, Header, NavBar, Toggle } from './styles';
 
 const Dashboard = _ =>{
     const [on, setOn] = useState(false);
-    
+
     function handleToggle(){
         const collapse = document.querySelector('..collapse-nav');
         const collapseToggled = document.querySelector('collapse-nav.toggled');
@@ -20,7 +20,7 @@ const Dashboard = _ =>{
             collapse.classList.remove('toggled');
         }
     }
-    
+
     return(
         <>
             <Header>
